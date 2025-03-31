@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Squid';
+    src: url(/src/fonts/game_of_squids/Game\ Of\ Squids.otf);
+}
+
+:root{
+    --rosa: #ff1b7b;
+    --azul: #1ABC9C;
+}
+
+
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
+    position: relative;
+    background: url('/src/images/bg.png') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
