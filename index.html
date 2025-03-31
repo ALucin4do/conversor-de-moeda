@@ -12,12 +12,16 @@
 <body>
     <img src="https://i.postimg.cc/GpCxYmvc/title.png" alt="Logo" class="logo">
 
-    <div class="conversor">
-      <h2>{o} Quem ganha, ganha em Wons! }o{ </h2>
-
-      <button onclick="conversor()"">Bora converter!</button>
+    <div id="conversor">
+        <h2>{o} Quem ganha, ganha em Wons! }o{ </h2>
+        <input type="number" id="won" placeholder="digite apenas números">
+        <button id="btn-converter" >Bora converter!</button>
     </div>
 
+    <div id="convertido">
+        <h2> Esse é o resultado em reais: </h2>
+        <p id="real"></p>
+    </div>
 
 
     <!-- <footer>Alura - Imersão DEV - 2025</footer> -->

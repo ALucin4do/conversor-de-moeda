@@ -1,5 +1,4 @@
 
-
 /* Logo Styles */
 .logo {
   position: absolute;
@@ -9,7 +8,7 @@
   width: auto;
 }
 
-.conversor {
+#conversor {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,14 +21,38 @@
   backdrop-filter: blur(5px);
 }
 
-.conversor h2 {
+#conversor h2 {
   font-size: 3.2rem;
-  font-family: 'squid';
+  font-family: 'squid', sans-serif;
   text-transform: uppercase;
   color: var(--azul);
   font-weight: 700;
-  text-shadow: 0 0 5px var(--azul), 0 0 10px var(--azul);
+  text-shadow: 0 0 4px var(--azul), 0 0 8px var(--azul);
 }
+
+#conversor input{
+  width: 40%;
+  padding: 1rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: .8rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  box-shadow: 0 0 5px black;
+  text-align: center;
+  transition: all 200ms ease-in-out;
+
+  &:hover, &:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  &::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+}
+
 
 /* Button Styles */
 button {
@@ -41,13 +64,13 @@ button {
   color: white;
   cursor: pointer;
   transition: all 200ms ease-in-out;
-  box-shadow: 0 0 10px var(--rosa), 0 0 20px var(--rosa);
+  box-shadow: 0 0 5px var(--rosa), 0 0 10px var(--rosa);
 
   &:hover, &:focus {
     background-color: var(--azul);
     outline: none;
     transform: scale(1.05);
-    box-shadow: 0 0 10px var(--azul), 0 0 20px var(--azul);
+    box-shadow: 0 0 5px var(--azul), 0 0 10px var(--azul);
   }
 
   &:active {
@@ -55,7 +78,31 @@ button {
   }
 }
 
+#convertido{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 10px black;
+  backdrop-filter: blur(5px);
+}
 
+#convertido h2{
+  font-size: 2.4rem;
+}
+
+#convertido #real{
+  font-size: 3.2rem;
+  font-family: 'squid', sans-serif;
+  text-transform: uppercase;
+  color: var(--rosa);
+  font-weight: 700;
+  text-shadow: 0 0 4px var(--rosa), 0 0 8px var(--rosa);
+}
 
 /* Footer Styles */
 footer {
